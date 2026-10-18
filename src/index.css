@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root {
+  --font-heading: 'HelveticaNowDisplay-Medium', 'Poppins', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Poppins', 'HelveticaNowDisplayW01-Rg', 'Helvetica Neue', Arial, sans-serif;
+  --primary-color: #185b9f;
+  --secondary-color: #640115;
+  --light-pink-color: #faf4f5;
+  --dark-color: #252525;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #faf4f5;
+  color: #252525;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
